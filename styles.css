@@ -4,18 +4,21 @@ p, h1, h2, a{
 }
 
 body {
-  font-family:cursive;
+  font-family: cursive;
   background-color: rgb(100%, 32%, 32%)
 }
 
 h2 {
-  background-color:turquoise;
+  background-color: turquoise;
   width: 45%;
   padding: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
   margin: 10px auto;
   text-shadow: 2px 2px yellow;
   border-radius: 12px;
-  border: dashed 4px hsl(315, 50%, 50%)
+  border: dashed 4px hsl(315, 50%, 50%);
+  text-align: center;
 }
 
 ul li {
