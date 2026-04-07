@@ -80,7 +80,8 @@ a {
   background-color: rgba(255, 80, 80, .8);
   margin: 10px 15%;
   padding: 5px 15px 5px;
-  border-radius: 10px
+  border-radius: 10px;
+  color: white
 }
 #back {
   z-index: -10;
@@ -137,7 +138,7 @@ h3 {
   border-radius: 10px
 }
 #pic-1 {
-  border: solid 3px black;
+  border: solid 3px white;
   text-align: center;
   width: 33vw;
   float:right;
@@ -146,7 +147,7 @@ h3 {
   border-radius: 10px
 }
 #pic-2 {
-  border: solid 3px black;
+  border: solid 3px white;
   text-align: center;
   width: 33vw;
   float:left;
@@ -155,7 +156,7 @@ h3 {
   border-radius: 10px
 }
 #pic-3 {
-  border: solid 3px black;
+  border: solid 3px white;
   text-align: center;
   width: 33vw;
   float:right;
