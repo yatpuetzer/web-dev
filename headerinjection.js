@@ -1,5 +1,5 @@
 let elem = document.createElement("div");
-elem.innerhtml = "<link rel='stylesheet' href='https://yatpuetzer.github.io/web-dev/header.css'>";
+elem.innerHTML = "<link rel='stylesheet' href='https://yatpuetzer.github.io/web-dev/wdsub/journal.css'>";
 document.body.prepend(elem);
 
 fetch("https://yatpuetzer.github.io/web-dev/globalheader.html")
