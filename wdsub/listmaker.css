@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  font-family: cursive
+  
+}
+li {
+  text-align: left;
+  margin-left: 10%;
+}
+#back {
+  z-index: -10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+}
+h1 {
+  color: red
+}
+button {
+  color: blue
+}
+button {
+  margin: 5px;
+}
+ul {
+  list-style-type: none
+}
+li button {
+  background-color: rgba(1, 1, 1, 0);
+  border: none
+}
