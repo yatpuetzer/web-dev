@@ -1,0 +1,11 @@
+<label for"input">Enter your name here</label>
+<input type="text" id="input">
+<script>
+  function letterCounter() {
+  let name = document.getElementById("input").value;
+  for (let i=0; i<name.length; i++) {
+    let ltr= name.substr(i, 1);
+    console.log("the next letter in yout name is "+ltr);
+  }
+}
+</script>
