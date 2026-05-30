@@ -65,8 +65,9 @@ function calc() {
       if (Number(p1PayArr[P2_NUM_STRATS*i+j].value)> Number(largest)) largest = Number(p1PayArr[P2_NUM_STRATS*i+j].value);
     }
     //Eliminate any cless which aren't best responses
-    for (let j=0; j < P2_NUM_STRATS; j++) {
-     if (Number(p1PayArr[P2_NUM_STRATS*i+j].value) != Number(largest)) payCellArr[P2_NUM_STRATS*i+j].classList.add("eliminated");
+   for (let i=0; i < P1_NUM_STRATS; i++) {
+ if (Number(p1PayArr[P2_NUM_STRATS*i+j].value) != Number(largest)) payCellArr[P2_NUM_STRATS*i+j].classList.add("eliminated");
+}
     }
   }
 //Loop through every row, finding p2s highest payooff of the colloms
@@ -81,7 +82,6 @@ function calc() {
     for (let j=0; j < P2_NUM_STRATS; j++) {
      if (Number(p2PayArr[P2_NUM_STRATS*i+j].value) != Number(largest)) payCellArr[P2_NUM_STRATS*i+j].classList.add("eliminated");
     }
-  }
 //Give thje ne class to any cells which are best responses for both players
   for (const elem of payCellArr) {
     if(elem.classList.contains("eliminated") == false) elem.classList.add("ne")
