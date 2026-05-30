@@ -1,8 +1,7 @@
-this will be the js file for the matrix page titled ne-calc-script.js
 //TODO: Replace p1NumStrats and p2NumStrats with query parameters
 let queryParams = new URLSearchParams(window.location.search);
-const P1_NUM_STRATS = queryParams.get("p1NumStrats");
-const P2_NUM_STRATS = queryParams.get("p2NumStrats");
+const P1_NUM_STRATS = Number(queryParams.get("p1NumStrats"));
+const P2_NUM_STRATS = Number(queryParams.get("p2NumStrats"));
 const PAYOFF_CONTENTS = "(<input type='number'>,<input type='number'>)"
 
 buildMatrix();
@@ -50,13 +49,13 @@ function randomize() {
 }
 
 function calc() {
-  let p1PayArr = document.querySelectorAll("payoff-cell input:first-child");
-  let p2PayArr = document.querySelectorAll("payoff-cell input:last-child");
-  let payCellArr = document.querySelectorAll("payoff-cell");
+  let p1PayArr = document.querySelectorAll(".payoff-cell input:first-child");
+  let p2PayArr = document.querySelectorAll(".payoff-cell input:last-child");
+  let payCellArr = document.querySelectorAll(".payoff-cell");
   
   for (const elem of payCellArr) {
-    if(elem.classList.contains("eliminated") == true) ele.classList.remove("eliminated");
-    if(elem.classList.contains("ne") == true) ele.classList.remove("ne");
+    if(elem.classList.contains("eliminated") == true) elem.classList.remove("eliminated");
+    if(elem.classList.contains("ne") == true) elem.classList.remove("ne");
   }
 //loop througb every cilum finding p1 highest payoff out of the rows
   for (let j=0; j < P2_NUM_STRATS; j++) {
@@ -85,6 +84,6 @@ function calc() {
   }
 //Give thje ne class to any cells which are best responses for both players
   for (const elem of payCellArr) {
-    if(elem.classList.contains("eliminated") == false) ele.classList.add("ne")
+    if(elem.classList.contains("eliminated") == false) elem.classList.add("ne")
   }
 }
