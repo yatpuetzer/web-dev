@@ -49,9 +49,9 @@ function randomize() {
 }
 
 function calc() {
-  let p1PayArr = document.querySelectorAll(".payoff-cell input:first-child");
-  let p2PayArr = document.querySelectorAll(".payoff-cell input:last-child");
-  let payCellArr = document.querySelectorAll(".payoff-cell");
+  let p1PayArr = document.querySelectorAll(".payoff input:first-child");
+  let p2PayArr = document.querySelectorAll(".payoff input:last-child");
+  let payCellArr = document.querySelectorAll(".payoff");
   
   for (const elem of payCellArr) {
     if(elem.classList.contains("eliminated") == true) elem.classList.remove("eliminated");
@@ -62,7 +62,7 @@ function calc() {
     let largest = - Infinity;
     //Identify the highest payoff in this collom
     for (let i=0; i < P1_NUM_STRATS; i++) {
-      if (Number(p1PayArr[P2_NUM_STRATS*i+j].value)> Number(largest)) largest = p1PayArr[P2_NUM_STRATS*i+j].value;
+      if (Number(p1PayArr[P2_NUM_STRATS*i+j].value)> Number(largest)) largest = Number(p1PayArr[P2_NUM_STRATS*i+j].value);
     }
     //Eliminate any cless which aren't best responses
     for (let j=0; j < P2_NUM_STRATS; j++) {
