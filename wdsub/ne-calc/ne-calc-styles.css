@@ -22,9 +22,9 @@ h1 {
 .matrix-row input {
   width: 40px;
 }
-.ne, ne input {
+.ne, .ne input {
   background-color: green
 }
-eliminated {
+.eliminated {
   background-color: #555;
 }
