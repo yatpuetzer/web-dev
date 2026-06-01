@@ -102,4 +102,3 @@ function calc() {
   for (const elem of payCellArr) {
     if(elem.classList.contains("eliminated") == false) elem.classList.add("ne")
   }
-}
