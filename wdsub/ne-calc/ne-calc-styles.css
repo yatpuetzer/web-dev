@@ -2,7 +2,7 @@ body {
   margin: 0px;
 }
 h1 {
-  text-align: center
+  text-align: center;
 }
 #matrix {
   width:65%;
@@ -11,19 +11,19 @@ h1 {
 .matrix-row {
   display: flex;
   justify-content: space-evenly;
-  height: 50px
+  height: 50px;
 }
 .matrix-row div {
   flex: 1 1 0;
   border: solid black 1px;
   align-content: center;
-  text-align: center
+  text-align: center;
 }
 .matrix-row input {
   width: 40px;
 }
 .ne, .ne input {
-  background-color: green
+  background-color: green;
 }
 .eliminated {
   background-color: #555;
