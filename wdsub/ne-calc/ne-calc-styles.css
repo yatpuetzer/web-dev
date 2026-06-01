@@ -28,8 +28,3 @@ h1 {
 .eliminated {
   background-color: #555;
 }
-
-.eliminated,
-.eliminated input {
-  background-color: #555;
-}
