@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  text-align: center;
+  font-family: cursive;
+}
+
+h1 {
+  text-shadow: 3px 3px grey;
+}
+
+.ttt-square {
+  border: solid white 5px;
+  min-height: 100px;
+  width: 30%;
+  float: left;
+  box-shadow: 10px 10px 15px black;
+}
+
+.ttt-square:hover {
+  box-shadow: none;
+}
+
+#board {
+  margin: 15%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#game-over {
+  background-color: rgba(250, 80, 200, .5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-over div {
+  background-color: white;
+  width: 40%;
+  text-align: center;
+  padding: 30px;
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
+.ttt-square {
+  border: solid white 5px;
+  min-height: 100px;
+  width: 30%;
+  float: left;
+  box-shadow: 10px 10px 15px black;
+  font-size: 3rem;
+  line-height: 100px;
+  text-align: center;
+}
