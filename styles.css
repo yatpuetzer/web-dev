@@ -34,7 +34,7 @@ ul li {
 a:hover {color:blue}
       
 #email {color:grey}
-img {
+.img {
   position: fixed;
   z-index:-10;
   top: 0px;
