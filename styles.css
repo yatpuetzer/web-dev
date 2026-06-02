@@ -42,7 +42,7 @@ a:hover {color:blue}
   left:0px;
   right:0px;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 }
 .bg-img {
   position: fixed;
@@ -52,5 +52,5 @@ a:hover {color:blue}
   left:0px;
   right:0px;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
 }
